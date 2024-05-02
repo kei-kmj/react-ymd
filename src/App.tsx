@@ -11,26 +11,29 @@ import {StateParent} from "./StateParent.tsx";
 import {EventDate} from "./EventDate.tsx";
 import {Propagation} from "./Propagation.tsx";
 import {FortuneTelling} from "./FortuneTelling.tsx";
+import {BasicForm} from "./BasicForm.tsx";
+import {UCForm} from "./UCForm.tsx";
+import {TextArea} from "./TextArea.tsx";
+import {FormSelect} from "./FormSelect.tsx";
+import {FormList} from "./FormList.tsx";
+import {FormRadio} from "./RadioButton.tsx";
+import {FormCheck} from "./FormCheck.tsx";
+import {CheckMulti} from "./CheckMulti.tsx";
+import {FormFile} from "./FormFile.tsx";
 
 export const App = () => {
 
     return (
         <Router>
             <Routes>
-                <Route path="/" Component={() => (
-                    <Logo/>
-                )}/>
+                <Route path="/" element={<Logo/>}/>
                 <Route path="/basic" Component={() => (
                     <div>
                         <MyHello myName="React" times={1}/>
                         <Counter init={0}/>
                     </div>
                 )}/>
-                <Route path="/books" Component={() => (
-                    <div>
-                        <Books/>
-                    </div>
-                )}/>
+                <Route path="/books" element={<Books/>}/>
                 <Route path="/wellcome_child" Component={() => (
                     <div>
                         <Wellcome>
@@ -51,18 +54,19 @@ export const App = () => {
                         </WellcomeKey>
                     </div>
                 )}/>
-                <Route path="/state" Component={() => (
-                    <StateParent/>
-                )}/>
-                <Route path="/event" Component={() => (
-                    <EventDate/>
-                )}/>
-                <Route path="/propagation" Component={() => (
-                    <Propagation/>
-                )}/>
-                <Route path="/fortune_telling" Component={() => (
-                    <FortuneTelling />
-                )}/>
+                <Route path="/state" element={<StateParent/>}/>
+                <Route path="/event" element={<EventDate/>}/>
+                <Route path="/propagation" element={<Propagation/>}/>
+                <Route path="/fortune_telling" element={<FortuneTelling/>}/>
+                <Route path="/basic_form" element={<BasicForm/>}/>
+                <Route path="/uc_form" element={<UCForm/>}/>
+                <Route path="/text_area" element={<TextArea/>}/>
+                <Route path="/form_select" element={<FormSelect/>}/>
+                <Route path="/form_list" element={<FormList/>}/>
+                <Route path="/form_radio" element={<FormRadio/>}/>
+                <Route path="/form_check" element={<FormCheck/>}/>
+                <Route path="/check_multi" element={<CheckMulti/>}/>
+                <Route path="/form_file" element={<FormFile/>}/>
             </Routes>
         </Router>)
 }

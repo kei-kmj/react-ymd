@@ -43,6 +43,37 @@ export const Logo = () => {
                 <Link to="/fortune_telling">
                     <button>今日の運勢</button>
                 </Link>
+                <div>
+                    <Link to="/basic_form">
+                        <button>基本のフォーム</button>
+                    </Link>
+                    <Link to="/uc_form">
+                        <button>UCフォーム</button>
+                    </Link>
+                </div>
+                <div>
+                    <Link to="/text_area">
+                        <button>テキストエリア</button>
+                    </Link>
+                    <Link to="/form_select">
+                        <button>選択ボックス</button>
+                    </Link>
+                    <Link to="/form_list">
+                        <button>リストボックス</button>
+                    </Link>
+                    <Link to="/form_radio">
+                        <button>ラジオボタン</button>
+                    </Link>
+                    <Link to="/form_check">
+                        <button>チェックボタン</button>
+                    </Link>
+                    <Link to="/check_multi">
+                        <button>マルチチェック</button>
+                    </Link>
+                    <Link to="/form_file">
+                        <button>ファイル入力</button>
+                    </Link>
+                </div>
             </div>
         </>
     )
