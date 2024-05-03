@@ -73,6 +73,17 @@ export const Logo = () => {
                     <Link to="/form_file">
                         <button>ファイル入力</button>
                     </Link>
+                    <div>
+                        <Link to="/todo">
+                            <button>Todo List</button>
+                        </Link>
+                        <Link to="/form_basic">
+                            <button>入力フォーム</button>
+                        </Link>
+                        <Link to="/hook_timer">
+                            <button>タイマー</button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </>

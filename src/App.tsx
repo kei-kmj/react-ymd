@@ -20,6 +20,9 @@ import {FormRadio} from "./RadioButton.tsx";
 import {FormCheck} from "./FormCheck.tsx";
 import {CheckMulti} from "./CheckMulti.tsx";
 import {FormFile} from "./FormFile.tsx";
+import {TodoList} from "./TodoList.tsx";
+import {FormBasic} from "./FormBasic.tsx";
+import {HookTimer} from "./HookTimer.tsx";
 
 export const App = () => {
 
@@ -67,6 +70,9 @@ export const App = () => {
                 <Route path="/form_check" element={<FormCheck/>}/>
                 <Route path="/check_multi" element={<CheckMulti/>}/>
                 <Route path="/form_file" element={<FormFile/>}/>
+                <Route path="/todo" element={<TodoList/>}/>
+                <Route path="/form_basic" element={<FormBasic/>}/>
+                <Route path="/hook_timer" element={<HookTimer init={0}/>}/>
             </Routes>
         </Router>)
 }
